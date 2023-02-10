@@ -18,8 +18,6 @@ browser.windows.onFocusChanged.addListener(() => {
   })
 })
 
-// 设置tab的index会导致原本此index的tab会向后移动一位.
-
 async function moveTabsToCurrentWindow(tabIds: number[]): Promise<void> {
   await browser.tabs.move(tabIds, {
     windowId: await getCurrentWindowId()
