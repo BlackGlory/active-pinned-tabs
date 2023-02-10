@@ -1,3 +1,4 @@
+import 'webextension-polyfill/dist/browser-polyfill.min'
 import { each } from 'extra-promise'
 import { retryUntil, delay } from 'extra-retry'
 
