@@ -27,7 +27,12 @@ module.exports = {
 , plugins: [
     new CopyPlugin({
       patterns: [
-        { from: './src', globOptions: { ignore: ['**/*.ts', '**/*.tsx', '**/*.html'] }}
+        {
+          from: './src'
+        , globOptions: {
+            ignore: ['**/*.ts', '**/*.tsx', '**/*.html', '**/manifest.*.json']
+          }
+        }
       ]
     })
   ]
