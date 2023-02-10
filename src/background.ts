@@ -1,6 +1,6 @@
-import 'webextension-polyfill/dist/browser-polyfill.min'
 import { each } from 'extra-promise'
 import { retryUntil, delay } from 'extra-retry'
+import browser from 'webextension-polyfill'
 
 browser.windows.onFocusChanged.addListener(() => {
   // Tabs cannot be edited when user dragging a tab, so retry it.
@@ -26,7 +26,7 @@ async function moveTabsToCurrentWindow(tabIds: number[]): Promise<void> {
   })
 }
 
-async function getPinnedTabs(): Promise<browser.tabs.Tab[]> {
+async function getPinnedTabs(): Promise<browser.Tabs.Tab[]> {
   return await browser.tabs.query({ pinned: true })
 }
 

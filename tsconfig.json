@@ -3,6 +3,7 @@
     "target": "ES2019"
   , "module": "ES2020"
   , "moduleResolution": "Node"
+  , "allowSyntheticDefaultImports": true
   , "removeComments": true
   , "strict": true
   , "noUnusedLocals": true
