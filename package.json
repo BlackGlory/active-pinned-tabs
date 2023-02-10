@@ -8,7 +8,7 @@
     "lint": "eslint --ext .js,.jsx,.ts,.tsx --quiet src",
     "clean": "rimraf dist",
     "build": "webpack --config webpack.prod.js",
-    "dev": "webpack -w --config webpack.dev.js"
+    "dev": "webpack --watch --config webpack.dev.js"
   },
   "husky": {
     "hooks": {
