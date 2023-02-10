@@ -14,7 +14,7 @@ Note: Please use "close tabs to the right" instead of "close window", otherwise 
 - [x] [Firefox]
 
 [Chrome]: https://chrome.google.com/webstore/detail/dldplpmpobeolcmolanaafacfcggjlpf
-[Firefox]: https://addons.mozilla.org/firefox/addon/active-pinned-tab/
+[Firefox]: https://addons.mozilla.org/firefox/addon/active-pinned-tabs/
 
 ## Screenshot
 ![](res/screenshot.png)
