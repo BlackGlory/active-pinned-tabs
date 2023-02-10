@@ -1,5 +1,5 @@
-# Active Pinned Tab
-![active-pinned-tab-logo]
+# Active Pinned Tabs
+![active-pinned-tabs-logo]
 
 When this extension is enabled, pinned tabs will be automatically moved to the current window.
 
@@ -7,7 +7,7 @@ You can pin frequently used tabs (music player, email, IM, etc.) and use them in
 
 Note: Please use "close tabs to the right" instead of "close window", otherwise the pinned tabs in the current window will be closed as well.
 
-[active-pinned-tab-logo]: src/assets/images/icon-128.png
+[active-pinned-tabs-logo]: src/assets/images/icon-128.png
 
 ## Support browsers
 - [x] [Chrome]

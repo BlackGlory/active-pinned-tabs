@@ -1,7 +1,6 @@
 {
   "private": true,
-  "name": "active-pinned-tab",
-  "repository": "git@github.com:BlackGlory/active-pinned-tab.git",
+  "repository": "git@github.com:BlackGlory/active-pinned-tabs.git",
   "author": "BlackGlory <woshenmedoubuzhidao@blackglory.me>",
   "license": "MIT",
   "scripts": {
