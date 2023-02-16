@@ -9,7 +9,7 @@ Note: Please use "close tabs to the right" instead of "close window", otherwise 
 
 [active-pinned-tabs-logo]: src/assets/images/icon-128.png
 
-## Support browsers
+## Supported browsers and platforms
 - [x] [Chrome]
 - [x] [Firefox]
 
