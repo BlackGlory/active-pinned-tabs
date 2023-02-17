@@ -12,9 +12,11 @@ Note: Please use "close tabs to the right" instead of "close window", otherwise 
 ## Supported browsers and platforms
 - [x] [Chrome]
 - [x] [Firefox]
+- [x] [Edge]
 
 [Chrome]: https://chrome.google.com/webstore/detail/dldplpmpobeolcmolanaafacfcggjlpf
 [Firefox]: https://addons.mozilla.org/firefox/addon/active-pinned-tabs/
+[Edge]: https://microsoftedge.microsoft.com/addons/detail/ijmacamlecnnaidemmhdbicmallgnple
 
 ## Screenshot
 ![](res/screenshot.png)
