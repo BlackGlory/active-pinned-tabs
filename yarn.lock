@@ -57,6 +57,16 @@
     extra-promise "^4.4.0"
     extra-utils "^4.0.1"
 
+"@blackglory/log@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@blackglory/log/-/log-2.0.0.tgz#886ca45c4ec867a87402fe09bafdd2d12711579b"
+  integrity sha512-qFv/0nV/fc7NRA18L9E9hdJQcgrJm4WLogkS5nJ02HlOcBPzBANWNIHBjitnIKI1YtkNMgcLrwx6lAeRPSnsbQ==
+  dependencies:
+    "@blackglory/go" "^1.1.2"
+    extra-compatible "^0.2.0"
+    extra-promise "^6.0.3"
+    extra-utils "^5.0.1"
+
 "@blackglory/pass@^1.1.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@blackglory/pass/-/pass-1.1.0.tgz#f281b7647bf542f98ede594338742ab406f97afc"
@@ -75,6 +85,21 @@
     extra-promise "^4.4.0"
     extra-utils "^4.0.0"
     iterable-operator "^2.5.0"
+    justypes "^4.1.0"
+
+"@blackglory/prelude@^0.3.0", "@blackglory/prelude@^0.3.1":
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/@blackglory/prelude/-/prelude-0.3.1.tgz#7a61b9c4d10467f2abc7c595be51bf13dabfafd9"
+  integrity sha512-FSE+ITVxuWPCQIEJNXMP2j3WrY0gXhMe/5LZd1SmqSp+cpQ5/EWJg/xv7bg6+JH0nzMtAVFt3IrvMWSxNrzqEw==
+  dependencies:
+    "@blackglory/errors" "^3.0.0"
+    "@blackglory/go" "^1.1.2"
+    "@blackglory/log" "^2.0.0"
+    "@blackglory/pass" "^1.1.0"
+    extra-lazy "^2.0.0"
+    extra-promise "^6.0.3"
+    extra-utils "^5.0.1"
+    iterable-operator "^4.0.3"
     justypes "^4.1.0"
 
 "@blackglory/structures@^0.11.4":
@@ -1447,6 +1472,14 @@ extra-compatible@^0.1.8:
     "@blackglory/prelude" "^0.2.4"
     iterable-operator "^2.1.0"
 
+extra-compatible@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/extra-compatible/-/extra-compatible-0.2.0.tgz#c123769350f1af1ce59086cc5c58eb327a89a50f"
+  integrity sha512-2b2lOIzq/RLk0bsmKVGbEIAJqu89NjBAafjufWQV4BvYJ8tcF2DAcgzrLN6UbRzChXMI16Ndwx4ooqDt15D8Eg==
+  dependencies:
+    "@blackglory/prelude" "^0.3.0"
+    iterable-operator "^4.0.2"
+
 extra-fsm@^0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/extra-fsm/-/extra-fsm-0.1.1.tgz#01ec99f1fd61158626633898edbd55384b329740"
@@ -1483,6 +1516,13 @@ extra-lazy@^1.3.1:
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/extra-lazy/-/extra-lazy-1.3.1.tgz#f8d74084e8806a6c1906ef292b4d6834e0b35517"
   integrity sha512-C55Cr/dQWQHdwuMTF+ySNMYqydVclmKdgFHoC/8gTu5Zoe1Nrx6jgArwfZ+7jKU78VjDfhrkGAJ38ucf0lozeQ==
+
+extra-lazy@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/extra-lazy/-/extra-lazy-2.0.0.tgz#e9e5155c61a73a154c3ebd2a1319122ffba4f590"
+  integrity sha512-6XDxV0In3ivMc8a07jiNVBhbCJ3pS3wASfkVv1fej8e1Ibrk96w0exi6S/Gi1GcCbjVESY/EYwVaFETUpzpHwg==
+  dependencies:
+    extra-utils "^5.0.1"
 
 extra-promise@^4.4.0:
   version "4.4.0"
