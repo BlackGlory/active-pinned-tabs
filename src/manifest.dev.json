@@ -14,8 +14,6 @@
 , "background": {
     "service_worker": "background.js"
   }
-, "permissions": [
-    "tabs"
-  ]
+, "permissions": []
 , "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApLogSoSwaWcFYlvBUnOT/MqsczL4PAQFEhOVggDC2xKva1oRAIM9ppHGUVCBzXf5wopdDRF5OyVPK6umSt1wMuKCa3YIQoyLPjQGwqo3y8XNW5/sN5Hw8ftv2FHPOaV8skf97eETcVa2mozlSZqEjU918KXtNEaws/s47dbNtWJDbUHQANS6vSP3Xx699+7EGoz05DnrdcoVpRGPqy7y8Oq2HPtJe3LtCnHsXGgHgGiqH6qPha+5AHb8AwTu2sH+vc/8sQScW2F7bkQ/rPd5n2lnK2fj2LLPR0Xr1ShwBkEYmS3fKPeMn7rwbCY+lgZ7p9CidAW8MD35xTeye/fqAwIDAQAB"
 }
