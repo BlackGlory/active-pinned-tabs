@@ -1,6 +1,6 @@
 import { each } from 'extra-promise'
 import { retryUntil, anyOf, delay, maxRetries } from 'extra-retry'
-import { isntUndefined } from '@blackglory/prelude'
+import { isntEmptyArray, isntUndefined } from '@blackglory/prelude'
 
 chrome.windows.onFocusChanged.addListener(() => {
   // Tabs cannot be edited when user dragging a tab, so retry it.
@@ -25,20 +25,22 @@ async function moveTabsToCurrentWindow(): Promise<void> {
       .map(x => x.id)
       .filter(isntUndefined)
 
-    await chrome.tabs.move(tabIds, {
-      windowId: window.id
-    , index: 0
-    })
+    if (isntEmptyArray(tabIds)) {
+      await chrome.tabs.move(tabIds, {
+        windowId: window.id
+      , index: 0
+      })
 
-    // Since the tab will be unpinned after moving, pin them again.
-    await each(tabIds, pinTab)
+      // Since the tab will be unpinned after moving, pin them again.
+      await each(tabIds, pinTab)
 
-    // In Firefox, the order of the tabs will change (https://github.com/BlackGlory/active-pinned-tab/issues/2).
-    await each(tabs, async tab => {
-      if (tab.id) {
-        await setTabIndex(tab.id, tab.index)
-      }
-    })
+      // In Firefox, the order of the tabs will change (https://github.com/BlackGlory/active-pinned-tab/issues/2).
+      await each(tabs, async tab => {
+        if (tab.id) {
+          await setTabIndex(tab.id, tab.index)
+        }
+      })
+    }
   }
 }
 
