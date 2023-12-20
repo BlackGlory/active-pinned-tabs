@@ -1,9 +1,8 @@
 import { each } from 'extra-promise'
 import { retryUntil, anyOf, delay, maxRetries } from 'extra-retry'
 import { isntUndefined } from '@blackglory/prelude'
-import browser from 'webextension-polyfill'
 
-browser.windows.onFocusChanged.addListener(() => {
+chrome.windows.onFocusChanged.addListener(() => {
   // Tabs cannot be edited when user dragging a tab, so retry it.
   // If you drag and drop tabs quickly, Chrome will crash, so add delay.
   retryUntil(
@@ -16,7 +15,7 @@ browser.windows.onFocusChanged.addListener(() => {
 })
 
 async function moveTabsToCurrentWindow(): Promise<void> {
-  const window = await browser.windows.getLastFocused()
+  const window = await chrome.windows.getLastFocused()
 
   // tabs can only be moved to and from normal
   if (window.type === 'normal') {
@@ -26,7 +25,7 @@ async function moveTabsToCurrentWindow(): Promise<void> {
       .map(x => x.id)
       .filter(isntUndefined)
 
-    await browser.tabs.move(tabIds, {
+    await chrome.tabs.move(tabIds, {
       windowId: window.id
     , index: 0
     })
@@ -43,8 +42,8 @@ async function moveTabsToCurrentWindow(): Promise<void> {
   }
 }
 
-async function getPinnedTabs(): Promise<browser.Tabs.Tab[]> {
-  return await browser.tabs.query({
+async function getPinnedTabs(): Promise<chrome.tabs.Tab[]> {
+  return await chrome.tabs.query({
     pinned: true
 
     // tabs can only be moved to and from normal
@@ -53,9 +52,9 @@ async function getPinnedTabs(): Promise<browser.Tabs.Tab[]> {
 }
 
 async function pinTab(id: number): Promise<void> {
-  await browser.tabs.update(id, { pinned: true })
+  await chrome.tabs.update(id, { pinned: true })
 }
 
 async function setTabIndex(id: number, index: number): Promise<void> {
-  await browser.tabs.move(id, { index: index })
+  await chrome.tabs.move(id, { index: index })
 }
