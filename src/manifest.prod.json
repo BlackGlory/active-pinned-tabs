@@ -3,7 +3,7 @@
 , "name": "Active Pinned Tabs"
 , "description": "When this extension is enabled, pinned tabs will be automatically moved to the current window."
 , "author": "BlackGlory"
-, "version": "2.0.4"
+, "version": "2.0.5"
 , "icons": {
     "16": "assets/images/icon-16.png"
   , "32": "assets/images/icon-32.png"
